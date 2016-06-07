@@ -22,6 +22,8 @@
 
 -(void)setData:(NSDictionary *)data{
     _imv.image=[UIImage imageNamed:data[@"pic"]];
+    _imv.clipsToBounds = YES;
+    _imv.contentMode = UIViewContentModeScaleAspectFit;
     _titleLable.text=data[@"title"];
     _applicantLable.text=data[@"applicant"];
     _contentLable.text=data[@"content"];

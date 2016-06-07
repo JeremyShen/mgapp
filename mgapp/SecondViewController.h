@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITabBarItem *barItem;
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
 
