@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LoginController.h"
+#import "FirstViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"User"] !=nil){
+    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+    FirstViewController *detailViewController=[board instantiateViewControllerWithIdentifier:@"initView"];
+    self.window.rootViewController = detailViewController;
+    }
     return YES;
 }
 
