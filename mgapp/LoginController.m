@@ -9,17 +9,22 @@
 #import "LoginController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
-@interface LoginController ()
+@interface LoginController ()<UITextFieldDelegate>
 @property(nonatomic,strong)MPMoviePlayerController *moviePlayer;
 @property(nonatomic ,strong)NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIView *alpaView;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 
 @property (weak, nonatomic) IBOutlet UIButton *regiset;
 @property (weak, nonatomic) IBOutlet UIButton *login;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextField *yanzhengma;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UITextField *pw1;
+@property (weak, nonatomic) IBOutlet UITextField *pw2;
 
+@property (weak, nonatomic) IBOutlet UIButton *next;
 
 - (IBAction)loginAction:(id)sender;
 @property(nonatomic ,strong)AVAudioSession *avaudioSession;
@@ -80,6 +85,13 @@
     
     self.login.layer.cornerRadius = 3.0f;
     self.login.alpha = 0.4f;
+    
+    _next.layer.cornerRadius = 3.0f;
+    _next.alpha = 0.4f;
+    _pw1.delegate=self;
+    _phoneNum.delegate=self;
+    _pw2.delegate=self;
+    _yanzhengma.delegate=self;
     
     self.scrollView.bounces = NO;
     
@@ -215,12 +227,14 @@
     
 }
 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [_pw1 resignFirstResponder];
+      [_pw2 resignFirstResponder];
+      [_phoneNum resignFirstResponder];
+      [_yanzhengma resignFirstResponder]; return YES;
 }
+
 
 
 - (IBAction)loginAction:(id)sender {

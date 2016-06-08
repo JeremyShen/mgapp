@@ -19,26 +19,26 @@
     UITabBarItem *item3 = [_rootTabBar.items objectAtIndex:3];
     // 对item设置相应地图片
 //    item0.selectedImage = [[UIImage imageNamed:@"recognize-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
-    item0.image = [[UIImage imageNamed:@"待办"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    item0.image = [[UIImage imageNamed:@"待办"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+////    item1.selectedImage = [[UIImage imageNamed:@"life-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
+//    item1.image = [[UIImage imageNamed:@"新闻"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+////    item2.selectedImage = [[UIImage imageNamed:@"edit-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
+//    item2.image = [[UIImage imageNamed:@"监控"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    item3.image = [[UIImage imageNamed:@"更多"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-//    item1.selectedImage = [[UIImage imageNamed:@"life-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
-    item1.image = [[UIImage imageNamed:@"新闻"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-//    item2.selectedImage = [[UIImage imageNamed:@"edit-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
-    item2.image = [[UIImage imageNamed:@"监控"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    item3.image = [[UIImage imageNamed:@"更多"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    [item0 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    [item0 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightGrayColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
 
     [item0 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColorFromHex(0x1E90FF), NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
-    [item1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    [item1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightGrayColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     
     [item1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColorFromHex(0x1E90FF), NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
-    [item2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    [item2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightGrayColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     
     [item2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColorFromHex(0x1E90FF), NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
-    [item3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    [item3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightGrayColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     
     [item3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColorFromHex(0x1E90FF), NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
     

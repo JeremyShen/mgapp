@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "LoginController.h"
 #import "FirstViewController.h"
+#import "SWIntroductionViewController.h"
+#import "LeftMenuViewController.h"
+#import "RightMenuViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,12 +20,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"User"] !=nil){
-    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
-    FirstViewController *detailViewController=[board instantiateViewControllerWithIdentifier:@"initView"];
-    self.window.rootViewController = detailViewController;
-    }
+    LeftMenuViewController *leftMenu = [[LeftMenuViewController alloc] init];
+    RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
+    
+    [SlideNavigationController sharedInstance].rightMenu = rightMenu;
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
+    
+//    // Override point for customization after application launch.
+//    if([[NSUserDefaults standardUserDefaults] objectForKey:@"User"] ==nil){
+//        SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
+//        self.window.rootViewController = vc;
+//    }else{
+//        UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+//        FirstViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+//            self.window.rootViewController = vc;
+//    }
     return YES;
 }
 
@@ -47,5 +60,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window  NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED{
+   return UIInterfaceOrientationMaskPortrait;
+}
+
 
 @end
