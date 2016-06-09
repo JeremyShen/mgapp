@@ -37,6 +37,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondLabelWidth;
 
+- (IBAction)nextAction:(id)sender;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *thridLabelWidth;
 @end
 
@@ -240,6 +241,15 @@
 - (IBAction)loginAction:(id)sender {
     
     
-    [[NSUserDefaults standardUserDefaults] setObject:@"lusi" forKey:@"User"];
+    
+}
+- (IBAction)nextAction:(id)sender {
+    
+
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+    UIViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "NeedDealCell.h"
+#import "LeftMenuViewController.h"
 @interface FirstViewController ()
 
 @end
@@ -22,6 +23,13 @@
 }
 - (void)viewDidLoad {
  
+    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+    LeftMenuViewController *leftMenu=[board instantiateViewControllerWithIdentifier:@"LeftMenuViewController"];
+    //    RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
+    
+    //    [SlideNavigationController sharedInstance].rightMenu = rightMenu;
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
     NSString* hetong=@"合同是当事人或当事双方之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。广义合同指所有法律部门中确定权利、义务关系的协议。狭义合同指一切民事合同。还有最狭义合同仅指民事合同中的债权合同。《中华人民共和国民法通则》第85条：合同是当事人之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。《中华人民共和国合同法》第2条：合同是平等主体的自然人、法人、其他组织之间设立、变更、终止民事权利义务关系的协议。婚姻、收养、监护等有关身份关系的协议，适用其他法律的规定。";
     NSDictionary* data1=@{@"pic":@"hetong",@"title":@"合同招标",@"applicant":@"申请人:陆思",@"content":hetong,@"date":@"12:30"};
        NSDictionary* data2=@{@"pic":@"hetong2",@"title":@"服务器采购",@"applicant":@"申请人:李乐",@"content":hetong,@"date":@"12:30"};

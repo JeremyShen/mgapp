@@ -20,22 +20,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    LeftMenuViewController *leftMenu = [[LeftMenuViewController alloc] init];
-    RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
     
-    [SlideNavigationController sharedInstance].rightMenu = rightMenu;
-    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
-    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
     
-//    // Override point for customization after application launch.
-//    if([[NSUserDefaults standardUserDefaults] objectForKey:@"User"] ==nil){
-//        SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
-//        self.window.rootViewController = vc;
-//    }else{
-//        UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
-//        FirstViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
-//            self.window.rootViewController = vc;
-//    }
+    // Override point for customization after application launch.
+    NSString* flag=[[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
+    if( flag==nil){
+        SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
+        self.window.rootViewController = vc;
+//        [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
+    }else{
+        UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+        FirstViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+            self.window.rootViewController = vc;
+    }
     return YES;
 }
 
