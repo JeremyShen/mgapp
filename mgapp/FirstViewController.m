@@ -20,9 +20,15 @@
 -(void)viewWillAppear:(BOOL)animated{
    
 //   _nvbar.backgroundColor=UIColorFromHex(0x25b6ed);
+    
 }
 - (void)viewDidLoad {
  
+    UIImage *rightImage = [UIImage imageNamed:@"添加"];
+    UIBarButtonItem* item= [[UIBarButtonItem alloc] initWithImage:rightImage style:UIBarButtonItemStylePlain target:self action:@selector(add:)];
+    item.tintColor=[UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem=item;
+    
     UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
     LeftMenuViewController *leftMenu=[board instantiateViewControllerWithIdentifier:@"LeftMenuViewController"];
     //    RightMenuViewController *rightMenu = [[RightMenuViewController alloc] init];
@@ -76,5 +82,12 @@
 {
     return NO;
 }
+
+-(void)add:(id)sender{
+    FirstViewController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"form"];
+    vc.navigationItem.title=@"申请单";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

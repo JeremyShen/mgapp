@@ -39,6 +39,7 @@
 		C559EAAF1D06DC54003FA7C9 /* keepkeep.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA01D06DC54003FA7C9 /* keepkeep.png */; };
 		C559EAB01D06DC54003FA7C9 /* keepkeep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA11D06DC54003FA7C9 /* keepkeep@2x.png */; };
 		C559EAB11D06DC54003FA7C9 /* keepkeep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA21D06DC54003FA7C9 /* keepkeep@3x.png */; };
+		C5B43F981D0D70CB00DABF5F /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B43F971D0D70CB00DABF5F /* MoreController.m */; };
 		C5C3672C1D0570DD00BC2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3672B1D0570DD00BC2148 /* main.m */; };
 		C5C3672F1D0570DD00BC2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3672E1D0570DD00BC2148 /* AppDelegate.m */; };
 		C5C367321D0570DD00BC2148 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C367311D0570DD00BC2148 /* FirstViewController.m */; };
@@ -136,6 +137,8 @@
 		C559EAA01D06DC54003FA7C9 /* keepkeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keepkeep.png; sourceTree = "<group>"; };
 		C559EAA11D06DC54003FA7C9 /* keepkeep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keepkeep@2x.png"; sourceTree = "<group>"; };
 		C559EAA21D06DC54003FA7C9 /* keepkeep@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keepkeep@3x.png"; sourceTree = "<group>"; };
+		C5B43F961D0D70CB00DABF5F /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreController.h; sourceTree = "<group>"; };
+		C5B43F971D0D70CB00DABF5F /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreController.m; sourceTree = "<group>"; };
 		C5C367271D0570DD00BC2148 /* mgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C3672B1D0570DD00BC2148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5C3672D1D0570DD00BC2148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,6 +274,15 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		C5B43F951D0D70B300DABF5F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				C5B43F961D0D70CB00DABF5F /* MoreController.h */,
+				C5B43F971D0D70CB00DABF5F /* MoreController.m */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
 		C5C3671E1D0570DD00BC2148 = {
 			isa = PBXGroup;
 			children = (
@@ -294,14 +306,9 @@
 		C5C367291D0570DD00BC2148 /* mgapp */ = {
 			isa = PBXGroup;
 			children = (
+				C5B43F951D0D70B300DABF5F /* More */,
 				C5E371651D08283D00DDBF87 /* Common */,
 				C5E371481D07B6C200DDBF87 /* Intro */,
-				C5E371491D07B6DB00DDBF87 /* SWIntroductionViewController.h */,
-				C5E3714A1D07B6DB00DDBF87 /* SWIntroductionViewController.m */,
-				C5E3714B1D07B6DB00DDBF87 /* GHWalkThroughPageCell.h */,
-				C5E3714C1D07B6DB00DDBF87 /* GHWalkThroughPageCell.m */,
-				C5E3714D1D07B6DB00DDBF87 /* GHWalkThroughView.h */,
-				C5E3714E1D07B6DB00DDBF87 /* GHWalkThroughView.m */,
 				C559EA931D06DC54003FA7C9 /* Resource */,
 				C559EA8E1D06DB61003FA7C9 /* Login */,
 				C559EA7D1D06B289003FA7C9 /* News */,
@@ -393,6 +400,12 @@
 		C5E371481D07B6C200DDBF87 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				C5E371491D07B6DB00DDBF87 /* SWIntroductionViewController.h */,
+				C5E3714A1D07B6DB00DDBF87 /* SWIntroductionViewController.m */,
+				C5E3714B1D07B6DB00DDBF87 /* GHWalkThroughPageCell.h */,
+				C5E3714C1D07B6DB00DDBF87 /* GHWalkThroughPageCell.m */,
+				C5E3714D1D07B6DB00DDBF87 /* GHWalkThroughView.h */,
+				C5E3714E1D07B6DB00DDBF87 /* GHWalkThroughView.m */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -675,6 +688,7 @@
 				C5C367351D0570DD00BC2148 /* SecondViewController.m in Sources */,
 				C5E371931D08290D00DDBF87 /* ProfileDetailViewController.m in Sources */,
 				C5C3672F1D0570DD00BC2148 /* AppDelegate.m in Sources */,
+				C5B43F981D0D70CB00DABF5F /* MoreController.m in Sources */,
 				C5E371511D07B6DB00DDBF87 /* GHWalkThroughView.m in Sources */,
 				C5E371901D08290D00DDBF87 /* HomeViewController.m in Sources */,
 				C5E371911D08290D00DDBF87 /* FriendsViewController.m in Sources */,

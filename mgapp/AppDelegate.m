@@ -29,8 +29,7 @@
         self.window.rootViewController = vc;
 //        [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
     }else{
-        UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
-        FirstViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+        FirstViewController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"initView"];
             self.window.rootViewController = vc;
     }
     return YES;
