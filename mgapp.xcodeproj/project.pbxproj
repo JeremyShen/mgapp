@@ -20,9 +20,9 @@
 		C559EA711D06A67C003FA7C9 /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA6E1D06A67C003FA7C9 /* 更多@2x.png */; };
 		C559EA721D06A67C003FA7C9 /* 监控@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA6F1D06A67C003FA7C9 /* 监控@2x.png */; };
 		C559EA731D06A67C003FA7C9 /* 新闻@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA701D06A67C003FA7C9 /* 新闻@2x.png */; };
-		C559EA771D06A6BC003FA7C9 /* 更多@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA741D06A6BC003FA7C9 /* 更多@3x.png */; };
-		C559EA781D06A6BC003FA7C9 /* 监控@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA751D06A6BC003FA7C9 /* 监控@3x.png */; };
-		C559EA791D06A6BC003FA7C9 /* 新闻@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA761D06A6BC003FA7C9 /* 新闻@3x.png */; };
+		C559EA771D06A6BC003FA7C9 /* 更多@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA741D06A6BC003FA7C9 /* 更多@2x.png */; };
+		C559EA781D06A6BC003FA7C9 /* 监控@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA751D06A6BC003FA7C9 /* 监控@2x.png */; };
+		C559EA791D06A6BC003FA7C9 /* 新闻@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA761D06A6BC003FA7C9 /* 新闻@2x.png */; };
 		C559EA801D06B2A5003FA7C9 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C559EA7F1D06B2A5003FA7C9 /* NewsCell.m */; };
 		C559EA851D06B40F003FA7C9 /* news1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C559EA811D06B40F003FA7C9 /* news1.jpg */; };
 		C559EA861D06B40F003FA7C9 /* news2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C559EA821D06B40F003FA7C9 /* news2.jpg */; };
@@ -67,6 +67,13 @@
 		C5C3676C1D058AE500BC2148 /* hetong2.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C3676B1D058AE500BC2148 /* hetong2.png */; };
 		C5C367701D058B8E00BC2148 /* hetong3.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C3676E1D058B8E00BC2148 /* hetong3.png */; };
 		C5C367721D058F0E00BC2148 /* hetong4.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C367711D058F0E00BC2148 /* hetong4.png */; };
+		C5DC7CAB1D1A35C900B06514 /* LGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7C9C1D1A35C900B06514 /* LGAlertView.m */; };
+		C5DC7CAC1D1A35C900B06514 /* LGAlertViewButtonProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7C9E1D1A35C900B06514 /* LGAlertViewButtonProperties.m */; };
+		C5DC7CAD1D1A35C900B06514 /* LGAlertViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7CA01D1A35C900B06514 /* LGAlertViewCell.m */; };
+		C5DC7CAE1D1A35C900B06514 /* LGAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7CA21D1A35C900B06514 /* LGAlertViewController.m */; };
+		C5DC7CAF1D1A35C900B06514 /* LGAlertViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7CA51D1A35C900B06514 /* LGAlertViewTextField.m */; };
+		C5DC7CB01D1A35C900B06514 /* LGAlertViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7CA71D1A35C900B06514 /* LGAlertViewWindow.m */; };
+		C5DC7CB11D1A35C900B06514 /* UIWindow+LGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DC7CA91D1A35C900B06514 /* UIWindow+LGAlertView.m */; };
 		C5E3714F1D07B6DB00DDBF87 /* SWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E3714A1D07B6DB00DDBF87 /* SWIntroductionViewController.m */; };
 		C5E371501D07B6DB00DDBF87 /* GHWalkThroughPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E3714C1D07B6DB00DDBF87 /* GHWalkThroughPageCell.m */; };
 		C5E371511D07B6DB00DDBF87 /* GHWalkThroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E3714E1D07B6DB00DDBF87 /* GHWalkThroughView.m */; };
@@ -132,9 +139,9 @@
 		C559EA6E1D06A67C003FA7C9 /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
 		C559EA6F1D06A67C003FA7C9 /* 监控@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "监控@2x.png"; sourceTree = "<group>"; };
 		C559EA701D06A67C003FA7C9 /* 新闻@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻@2x.png"; sourceTree = "<group>"; };
-		C559EA741D06A6BC003FA7C9 /* 更多@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@3x.png"; sourceTree = "<group>"; };
-		C559EA751D06A6BC003FA7C9 /* 监控@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "监控@3x.png"; sourceTree = "<group>"; };
-		C559EA761D06A6BC003FA7C9 /* 新闻@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻@3x.png"; sourceTree = "<group>"; };
+		C559EA741D06A6BC003FA7C9 /* 更多@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多@2x.png"; sourceTree = "<group>"; };
+		C559EA751D06A6BC003FA7C9 /* 监控@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "监控@2x.png"; sourceTree = "<group>"; };
+		C559EA761D06A6BC003FA7C9 /* 新闻@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻@2x.png"; sourceTree = "<group>"; };
 		C559EA7E1D06B2A5003FA7C9 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		C559EA7F1D06B2A5003FA7C9 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		C559EA811D06B40F003FA7C9 /* news1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news1.jpg; sourceTree = "<group>"; };
@@ -200,6 +207,21 @@
 		C5C3676E1D058B8E00BC2148 /* hetong3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hetong3.png; sourceTree = "<group>"; };
 		C5C367711D058F0E00BC2148 /* hetong4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hetong4.png; sourceTree = "<group>"; };
 		C5C367731D058FB200BC2148 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C5DC7C9B1D1A35C900B06514 /* LGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertView.h; sourceTree = "<group>"; };
+		C5DC7C9C1D1A35C900B06514 /* LGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertView.m; sourceTree = "<group>"; };
+		C5DC7C9D1D1A35C900B06514 /* LGAlertViewButtonProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewButtonProperties.h; sourceTree = "<group>"; };
+		C5DC7C9E1D1A35C900B06514 /* LGAlertViewButtonProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertViewButtonProperties.m; sourceTree = "<group>"; };
+		C5DC7C9F1D1A35C900B06514 /* LGAlertViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewCell.h; sourceTree = "<group>"; };
+		C5DC7CA01D1A35C900B06514 /* LGAlertViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertViewCell.m; sourceTree = "<group>"; };
+		C5DC7CA11D1A35C900B06514 /* LGAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewController.h; sourceTree = "<group>"; };
+		C5DC7CA21D1A35C900B06514 /* LGAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertViewController.m; sourceTree = "<group>"; };
+		C5DC7CA31D1A35C900B06514 /* LGAlertViewShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewShared.h; sourceTree = "<group>"; };
+		C5DC7CA41D1A35C900B06514 /* LGAlertViewTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewTextField.h; sourceTree = "<group>"; };
+		C5DC7CA51D1A35C900B06514 /* LGAlertViewTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertViewTextField.m; sourceTree = "<group>"; };
+		C5DC7CA61D1A35C900B06514 /* LGAlertViewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAlertViewWindow.h; sourceTree = "<group>"; };
+		C5DC7CA71D1A35C900B06514 /* LGAlertViewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAlertViewWindow.m; sourceTree = "<group>"; };
+		C5DC7CA81D1A35C900B06514 /* UIWindow+LGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LGAlertView.h"; sourceTree = "<group>"; };
+		C5DC7CA91D1A35C900B06514 /* UIWindow+LGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LGAlertView.m"; sourceTree = "<group>"; };
 		C5E371491D07B6DB00DDBF87 /* SWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWIntroductionViewController.h; sourceTree = "<group>"; };
 		C5E3714A1D07B6DB00DDBF87 /* SWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWIntroductionViewController.m; sourceTree = "<group>"; };
 		C5E3714B1D07B6DB00DDBF87 /* GHWalkThroughPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWalkThroughPageCell.h; sourceTree = "<group>"; };
@@ -473,9 +495,9 @@
 				C559EA831D06B40F003FA7C9 /* news3.jpg */,
 				C559EA841D06B40F003FA7C9 /* news4.jpg */,
 				C5E3715D1D07BD3400DDBF87 /* phone@2x.png */,
-				C559EA741D06A6BC003FA7C9 /* 更多@3x.png */,
-				C559EA751D06A6BC003FA7C9 /* 监控@3x.png */,
-				C559EA761D06A6BC003FA7C9 /* 新闻@3x.png */,
+				C559EA741D06A6BC003FA7C9 /* 更多@2x.png */,
+				C559EA751D06A6BC003FA7C9 /* 监控@2x.png */,
+				C559EA761D06A6BC003FA7C9 /* 新闻@2x.png */,
 				C559EA6E1D06A67C003FA7C9 /* 更多@2x.png */,
 				C559EA6F1D06A67C003FA7C9 /* 监控@2x.png */,
 				C559EA701D06A67C003FA7C9 /* 新闻@2x.png */,
@@ -488,6 +510,29 @@
 				C5C367691D05865500BC2148 /* hetong.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		C5DC7CAA1D1A35C900B06514 /* LGAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C5DC7C9B1D1A35C900B06514 /* LGAlertView.h */,
+				C5DC7C9C1D1A35C900B06514 /* LGAlertView.m */,
+				C5DC7C9D1D1A35C900B06514 /* LGAlertViewButtonProperties.h */,
+				C5DC7C9E1D1A35C900B06514 /* LGAlertViewButtonProperties.m */,
+				C5DC7C9F1D1A35C900B06514 /* LGAlertViewCell.h */,
+				C5DC7CA01D1A35C900B06514 /* LGAlertViewCell.m */,
+				C5DC7CA11D1A35C900B06514 /* LGAlertViewController.h */,
+				C5DC7CA21D1A35C900B06514 /* LGAlertViewController.m */,
+				C5DC7CA31D1A35C900B06514 /* LGAlertViewShared.h */,
+				C5DC7CA41D1A35C900B06514 /* LGAlertViewTextField.h */,
+				C5DC7CA51D1A35C900B06514 /* LGAlertViewTextField.m */,
+				C5DC7CA61D1A35C900B06514 /* LGAlertViewWindow.h */,
+				C5DC7CA71D1A35C900B06514 /* LGAlertViewWindow.m */,
+				C5DC7CA81D1A35C900B06514 /* UIWindow+LGAlertView.h */,
+				C5DC7CA91D1A35C900B06514 /* UIWindow+LGAlertView.m */,
+			);
+			name = LGAlertView;
+			path = ../../wodcn/wodcn/LGAlertView;
 			sourceTree = "<group>";
 		};
 		C5E371481D07B6C200DDBF87 /* Intro */ = {
@@ -518,6 +563,7 @@
 		C5E371651D08283D00DDBF87 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C5DC7CAA1D1A35C900B06514 /* LGAlertView */,
 				C5B0D6F01D13A00D004EF6F2 /* YSLContainerViewController */,
 				C5E371661D08284200DDBF87 /* SlideMenu */,
 			);
@@ -715,10 +761,10 @@
 				C559EAAD1D06DC54003FA7C9 /* keep_logo@2x.png in Resources */,
 				C559EA8A1D06D37A003FA7C9 /* 附件.png in Resources */,
 				C559EAA91D06DC54003FA7C9 /* keep6.png in Resources */,
-				C559EA791D06A6BC003FA7C9 /* 新闻@3x.png in Resources */,
+				C559EA791D06A6BC003FA7C9 /* 新闻@2x.png in Resources */,
 				C559EAAF1D06DC54003FA7C9 /* keepkeep.png in Resources */,
 				C559EA881D06B40F003FA7C9 /* news4.jpg in Resources */,
-				C559EA771D06A6BC003FA7C9 /* 更多@3x.png in Resources */,
+				C559EA771D06A6BC003FA7C9 /* 更多@2x.png in Resources */,
 				C559EAA61D06DC54003FA7C9 /* 4_circle_on@2x.png in Resources */,
 				C5E371A01D08648B00DDBF87 /* animation.png in Resources */,
 				C559EA611D0690FB003FA7C9 /* 待办@3x.png in Resources */,
@@ -738,7 +784,7 @@
 				C559EA851D06B40F003FA7C9 /* news1.jpg in Resources */,
 				C5E3719D1D08648B00DDBF87 /* gear.png in Resources */,
 				C559EAAB1D06DC54003FA7C9 /* keep6plus@3x.png in Resources */,
-				C559EA781D06A6BC003FA7C9 /* 监控@3x.png in Resources */,
+				C559EA781D06A6BC003FA7C9 /* 监控@2x.png in Resources */,
 				C559EAAE1D06DC54003FA7C9 /* keep_logo@3x.png in Resources */,
 				C5E3719E1D08648B00DDBF87 /* rightMenu.jpg in Resources */,
 				C52D24911D178DF100CF6BEC /* head.jpg in Resources */,
@@ -816,8 +862,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C559EA8D1D06D3EE003FA7C9 /* ApplicantFormController.m in Sources */,
+				C5DC7CB11D1A35C900B06514 /* UIWindow+LGAlertView.m in Sources */,
 				C52D248C1D13F62000CF6BEC /* BillPoolController.m in Sources */,
 				C5E371501D07B6DB00DDBF87 /* GHWalkThroughPageCell.m in Sources */,
+				C5DC7CAC1D1A35C900B06514 /* LGAlertViewButtonProperties.m in Sources */,
+				C5DC7CB01D1A35C900B06514 /* LGAlertViewWindow.m in Sources */,
 				C5C367351D0570DD00BC2148 /* SecondViewController.m in Sources */,
 				C5E371931D08290D00DDBF87 /* ProfileDetailViewController.m in Sources */,
 				C5C3672F1D0570DD00BC2148 /* AppDelegate.m in Sources */,
@@ -827,6 +876,7 @@
 				C5B0D6FD1D13DE57004EF6F2 /* DepositController.m in Sources */,
 				C5E371511D07B6DB00DDBF87 /* GHWalkThroughView.m in Sources */,
 				C5E371901D08290D00DDBF87 /* HomeViewController.m in Sources */,
+				C5DC7CAD1D1A35C900B06514 /* LGAlertViewCell.m in Sources */,
 				C5E371911D08290D00DDBF87 /* FriendsViewController.m in Sources */,
 				C5E371921D08290D00DDBF87 /* ProfileViewController.m in Sources */,
 				C5C367631D05796300BC2148 /* NeedDealCell.m in Sources */,
@@ -839,8 +889,10 @@
 				C5E3717A1D08286500DDBF87 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				C5E3717D1D08286500DDBF87 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				C5C367321D0570DD00BC2148 /* FirstViewController.m in Sources */,
+				C5DC7CAF1D1A35C900B06514 /* LGAlertViewTextField.m in Sources */,
 				C5E3717C1D08286500DDBF87 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				C5E3718F1D08290D00DDBF87 /* RightMenuViewController.m in Sources */,
+				C5DC7CAB1D1A35C900B06514 /* LGAlertView.m in Sources */,
 				C5B0D6FA1D13A0AF004EF6F2 /* MonitorController.m in Sources */,
 				C5C3672C1D0570DD00BC2148 /* main.m in Sources */,
 				C5B0D7001D13E64B004EF6F2 /* LoanController.m in Sources */,
@@ -848,6 +900,7 @@
 				C52D23CC1D13EBF600CF6BEC /* BigClientChartController.m in Sources */,
 				C5E3714F1D07B6DB00DDBF87 /* SWIntroductionViewController.m in Sources */,
 				C559EA911D06DB8A003FA7C9 /* LoginController.m in Sources */,
+				C5DC7CAE1D1A35C900B06514 /* LGAlertViewController.m in Sources */,
 				C5E3718E1D08290D00DDBF87 /* LeftMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

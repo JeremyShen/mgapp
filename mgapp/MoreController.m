@@ -7,6 +7,7 @@
 //
 
 #import "MoreController.h"
+#import "LGAlertView.h"
 
 @implementation MoreController
 {
@@ -52,5 +53,33 @@
         cell.textLabel.textAlignment=NSTextAlignmentCenter;
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section==3) {
+        [[[LGAlertView alloc] initWithTitle:@"退出登录"
+                                    message:nil
+                                      style:LGAlertViewStyleActionSheet
+                               buttonTitles:@[@"确认"]
+                          cancelButtonTitle:@"取消"
+                     destructiveButtonTitle:nil
+                              actionHandler:^(LGAlertView *alertView, NSString *title, NSUInteger index) {
+                                  NSLog(@"actionHandler, %@, %lu", title, (long unsigned)index);
+                                  UIViewController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"loginView"];
+                                  [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"User"];
+                                      [self presentViewController:vc animated:YES completion:nil];
+                              }
+                              cancelHandler:^(LGAlertView *alertView) {
+                                  NSLog(@"cancelHandler");
+                              }
+                         destructiveHandler:^(LGAlertView *alertView) {
+                             NSLog(@"destructiveHandler");
+                         }] showAnimated:YES completionHandler:nil];
+    }
+    
+}
+-(void)logout{
+    
 }
 @end

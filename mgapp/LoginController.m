@@ -61,6 +61,9 @@
     
     _moviePlayer = [[MPMoviePlayerController alloc]initWithContentURL:url];
     //    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
+//    if ([_moviePlayer isPreparedToPlay]) {
+//  
+//    }
     [_moviePlayer play];
     [_moviePlayer.view setFrame:self.view.bounds];
     
@@ -245,11 +248,12 @@
 }
 - (IBAction)nextAction:(id)sender {
     
-
-//    [self dismissViewControllerAnimated:YES completion:nil];
+ [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
     
     UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
     UIViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+     [_moviePlayer stop];
     [self presentViewController:vc animated:YES completion:nil];
+   
 }
 @end

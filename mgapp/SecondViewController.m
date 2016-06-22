@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "NewsCell.h"
+#import "YSLContainerViewController.h"
 @interface SecondViewController ()
 
 @end
@@ -18,6 +19,13 @@
     NSMutableArray* datas;
 }
 -(void)viewWillAppear:(BOOL)animated{
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.navigationBar.barTintColor=UIColorFromHex(0x25b6ed);
+    
     NSString* hetong=@"合同是当事人或当事双方之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。广义合同指所有法律部门中确定权利、义务关系的协议。狭义合同指一切民事合同。还有最狭义合同仅指民事合同中的债权合同。《中华人民共和国民法通则》第85条：合同是当事人之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。《中华人民共和国合同法》第2条：合同是平等主体的自然人、法人、其他组织之间设立、变更、终止民事权利义务关系的协议。婚姻、收养、监护等有关身份关系的协议，适用其他法律的规定。";
     NSDictionary* data1=@{@"pic":@"news4.jpg",@"title":@"习近平曾寄语考生:考上可喜考不上不用悲观",@"applicant":@"申请人:陆思",@"content":hetong,@"date":@"12:30"};
     NSDictionary* data2=@{@"pic":@"news1.jpg",@"title":@"“港独”艺人何韵诗被兰蔻终止合作 要求“还公道”",@"applicant":@"申请人:李乐",@"content":hetong,@"date":@"12:30"};
@@ -27,20 +35,32 @@
     self.table.delegate=self;
     self.table.dataSource=self;
     [self.table setSeparatorInset:UIEdgeInsetsMake(0, SCREEN_WIDTH*0.3, 0, 0)];
-   
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.navigationController.navigationBar.barTintColor=UIColorFromHex(0x25b6ed);
     
-//    for (UIButton* btn in _btns) {
-//        btn.layer.cornerRadius=35;
-//        
-//    }
-//    _barItem.image = [[UIImage imageNamed:@"新闻"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    _barItem.image=[self scaleImageToSize:_barItem.image size:CGSizeMake(100, 100)];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.title = @"最新";
+    
+    UIViewController * vc2= [[UIViewController alloc] init];
+    vc2.title = @"北京";
+    
+    UIViewController * vc3= [[UIViewController alloc] init];
+    vc3.title = @"上海";
+    
+    UIViewController * vc4= [[UIViewController alloc] init];
+    vc4.title = @"南京";
+    
+    UIViewController * vc5= [[UIViewController alloc] init];
+    vc5.title = @"香港";
+    
+    // ContainerView
+    float statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    float navigationHeight = self.navigationController.navigationBar.frame.size.height;
+    
+    YSLContainerViewController *containerVC = [[YSLContainerViewController alloc]initWithControllers:@[vc1,vc2,vc3,vc4,vc5]
+                                                                                        topBarHeight:statusHeight + navigationHeight+44               parentViewController:self];
+    containerVC.delegate = self;
+    containerVC.menuItemFont = [UIFont fontWithName:@"Futura-Medium" size:16];
+    
+    [self.view addSubview:containerVC.view];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -56,6 +76,14 @@
     }
     cell.data=datas[indexPath.row];
     return cell;
+}
+
+#pragma mark -- YSLContainerViewControllerDelegate
+- (void)containerViewItemIndex:(NSInteger)index currentController:(UIViewController *)controller
+{
+    //    NSLog(@"current Index : %ld",(long)index);
+    //    NSLog(@"current controller : %@",controller);
+    [controller viewWillAppear:YES];
 }
 
 @end

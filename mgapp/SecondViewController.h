@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SecondViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+#import "YSLContainerViewController.h"
+@interface SecondViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,YSLContainerViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITabBarItem *barItem;
 @property (weak, nonatomic) IBOutlet UITableView *table;
