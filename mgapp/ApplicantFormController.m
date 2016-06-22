@@ -22,6 +22,13 @@
     
     [_content.layer setMasksToBounds:YES];
     
+    _content2.layer.borderWidth = 0.6;
+    
+    _content2.layer.cornerRadius = 6.0f;
+    
+    [_content2.layer setMasksToBounds:YES];
+     _content2.layer.borderColor = [[UIColor colorWithRed:215.0 / 255.0 green:215.0 / 255.0 blue:215.0 / 255.0 alpha:1] CGColor];
+    
     UIBarButtonItem* item= [[UIBarButtonItem alloc] initWithTitle:@"退出编辑" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     item.tintColor=[UIColor whiteColor];
     self.navigationItem.leftBarButtonItem=item;

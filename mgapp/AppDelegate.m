@@ -24,14 +24,14 @@
     
     // Override point for customization after application launch.
     NSString* flag=[[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
-    if( flag==nil){
-        SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
-        self.window.rootViewController = vc;
-//        [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
-    }else{
+//    if( flag==nil){
+//        SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
+//        self.window.rootViewController = vc;
+////        [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
+//    }else{
         FirstViewController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"initView"];
             self.window.rootViewController = vc;
-    }
+//    }
     return YES;
 }
 

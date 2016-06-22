@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CD5C7640DDD9BBB78C49215 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9606ABCCEB24EE96C48E48 /* libPods.a */; };
+		C52D23CC1D13EBF600CF6BEC /* BigClientChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D23CB1D13EBF600CF6BEC /* BigClientChartController.m */; };
+		C52D248C1D13F62000CF6BEC /* BillPoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D248B1D13F62000CF6BEC /* BillPoolController.m */; };
+		C52D248F1D13F66300CF6BEC /* ForeigncurrencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D248E1D13F66300CF6BEC /* ForeigncurrencyController.m */; };
+		C52D24911D178DF100CF6BEC /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52D24901D178DF100CF6BEC /* head.jpg */; };
+		C52D24931D17DCFF00CF6BEC /* 通过@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52D24921D17DCFF00CF6BEC /* 通过@3x.png */; };
+		C52D24951D17DDAC00CF6BEC /* 驳回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52D24941D17DDAC00CF6BEC /* 驳回@3x.png */; };
 		C559EA611D0690FB003FA7C9 /* 待办@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA5D1D0690FB003FA7C9 /* 待办@3x.png */; };
 		C559EA691D069573003FA7C9 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C559EA681D069573003FA7C9 /* RootTabBarController.m */; };
 		C559EA6D1D06A619003FA7C9 /* 待办@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EA6C1D06A619003FA7C9 /* 待办@2x.png */; };
@@ -39,6 +46,12 @@
 		C559EAAF1D06DC54003FA7C9 /* keepkeep.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA01D06DC54003FA7C9 /* keepkeep.png */; };
 		C559EAB01D06DC54003FA7C9 /* keepkeep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA11D06DC54003FA7C9 /* keepkeep@2x.png */; };
 		C559EAB11D06DC54003FA7C9 /* keepkeep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C559EAA21D06DC54003FA7C9 /* keepkeep@3x.png */; };
+		C5B0D6F51D13A00D004EF6F2 /* YSLContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */; };
+		C5B0D6F61D13A00D004EF6F2 /* YSLScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F41D13A00D004EF6F2 /* YSLScrollMenuView.m */; };
+		C5B0D6FA1D13A0AF004EF6F2 /* MonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F91D13A0AF004EF6F2 /* MonitorController.m */; };
+		C5B0D6FD1D13DE57004EF6F2 /* DepositController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6FC1D13DE57004EF6F2 /* DepositController.m */; };
+		C5B0D7001D13E64B004EF6F2 /* LoanController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6FF1D13E64B004EF6F2 /* LoanController.m */; };
+		C5B0D7031D13E94D004EF6F2 /* BigClientController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D7021D13E94D004EF6F2 /* BigClientController.m */; };
 		C5B43F981D0D70CB00DABF5F /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B43F971D0D70CB00DABF5F /* MoreController.m */; };
 		C5C3672C1D0570DD00BC2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3672B1D0570DD00BC2148 /* main.m */; };
 		C5C3672F1D0570DD00BC2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3672E1D0570DD00BC2148 /* AppDelegate.m */; };
@@ -101,6 +114,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E9606ABCCEB24EE96C48E48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9207027B1B6DBA62565AF50D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C52D23CA1D13EBF600CF6BEC /* BigClientChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigClientChartController.h; sourceTree = "<group>"; };
+		C52D23CB1D13EBF600CF6BEC /* BigClientChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigClientChartController.m; sourceTree = "<group>"; };
+		C52D248A1D13F62000CF6BEC /* BillPoolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillPoolController.h; sourceTree = "<group>"; };
+		C52D248B1D13F62000CF6BEC /* BillPoolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillPoolController.m; sourceTree = "<group>"; };
+		C52D248D1D13F66300CF6BEC /* ForeigncurrencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeigncurrencyController.h; sourceTree = "<group>"; };
+		C52D248E1D13F66300CF6BEC /* ForeigncurrencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeigncurrencyController.m; sourceTree = "<group>"; };
+		C52D24901D178DF100CF6BEC /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
+		C52D24921D17DCFF00CF6BEC /* 通过@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "通过@3x.png"; sourceTree = "<group>"; };
+		C52D24941D17DDAC00CF6BEC /* 驳回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "驳回@3x.png"; sourceTree = "<group>"; };
 		C559EA5D1D0690FB003FA7C9 /* 待办@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "待办@3x.png"; sourceTree = "<group>"; };
 		C559EA671D069573003FA7C9 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
 		C559EA681D069573003FA7C9 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
@@ -137,6 +161,18 @@
 		C559EAA01D06DC54003FA7C9 /* keepkeep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keepkeep.png; sourceTree = "<group>"; };
 		C559EAA11D06DC54003FA7C9 /* keepkeep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keepkeep@2x.png"; sourceTree = "<group>"; };
 		C559EAA21D06DC54003FA7C9 /* keepkeep@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keepkeep@3x.png"; sourceTree = "<group>"; };
+		C5B0D6F11D13A00D004EF6F2 /* YSLContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLContainerViewController.h; sourceTree = "<group>"; };
+		C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLContainerViewController.m; sourceTree = "<group>"; };
+		C5B0D6F31D13A00D004EF6F2 /* YSLScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLScrollMenuView.h; sourceTree = "<group>"; };
+		C5B0D6F41D13A00D004EF6F2 /* YSLScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLScrollMenuView.m; sourceTree = "<group>"; };
+		C5B0D6F81D13A0AF004EF6F2 /* MonitorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorController.h; sourceTree = "<group>"; };
+		C5B0D6F91D13A0AF004EF6F2 /* MonitorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorController.m; sourceTree = "<group>"; };
+		C5B0D6FB1D13DE57004EF6F2 /* DepositController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositController.h; sourceTree = "<group>"; };
+		C5B0D6FC1D13DE57004EF6F2 /* DepositController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepositController.m; sourceTree = "<group>"; };
+		C5B0D6FE1D13E64B004EF6F2 /* LoanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanController.h; sourceTree = "<group>"; };
+		C5B0D6FF1D13E64B004EF6F2 /* LoanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanController.m; sourceTree = "<group>"; };
+		C5B0D7011D13E94D004EF6F2 /* BigClientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigClientController.h; sourceTree = "<group>"; };
+		C5B0D7021D13E94D004EF6F2 /* BigClientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigClientController.m; sourceTree = "<group>"; };
 		C5B43F961D0D70CB00DABF5F /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreController.h; sourceTree = "<group>"; };
 		C5B43F971D0D70CB00DABF5F /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreController.m; sourceTree = "<group>"; };
 		C5C367271D0570DD00BC2148 /* mgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +243,7 @@
 		C5E371991D08648B00DDBF87 /* rightMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightMenu.jpg; sourceTree = "<group>"; };
 		C5E3719A1D08648B00DDBF87 /* leftMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftMenu.jpg; sourceTree = "<group>"; };
 		C5E3719B1D08648B00DDBF87 /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animation.png; sourceTree = "<group>"; };
+		F3853B9E314EC68B512F8B6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD5C7640DDD9BBB78C49215 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +272,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		198AB48904768116EB3660B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3853B9E314EC68B512F8B6B /* Pods.debug.xcconfig */,
+				9207027B1B6DBA62565AF50D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8516C4FEB60EFA6E8CF02E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E9606ABCCEB24EE96C48E48 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C559EA7D1D06B289003FA7C9 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +329,38 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		C5B0D6F01D13A00D004EF6F2 /* YSLContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5B0D6F11D13A00D004EF6F2 /* YSLContainerViewController.h */,
+				C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */,
+				C5B0D6F31D13A00D004EF6F2 /* YSLScrollMenuView.h */,
+				C5B0D6F41D13A00D004EF6F2 /* YSLScrollMenuView.m */,
+			);
+			path = YSLContainerViewController;
+			sourceTree = "<group>";
+		};
+		C5B0D6F71D13A062004EF6F2 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				C5B0D6F81D13A0AF004EF6F2 /* MonitorController.h */,
+				C5B0D6F91D13A0AF004EF6F2 /* MonitorController.m */,
+				C5B0D6FB1D13DE57004EF6F2 /* DepositController.h */,
+				C5B0D6FC1D13DE57004EF6F2 /* DepositController.m */,
+				C5B0D6FE1D13E64B004EF6F2 /* LoanController.h */,
+				C5B0D6FF1D13E64B004EF6F2 /* LoanController.m */,
+				C5B0D7011D13E94D004EF6F2 /* BigClientController.h */,
+				C5B0D7021D13E94D004EF6F2 /* BigClientController.m */,
+				C52D23CA1D13EBF600CF6BEC /* BigClientChartController.h */,
+				C52D23CB1D13EBF600CF6BEC /* BigClientChartController.m */,
+				C52D248A1D13F62000CF6BEC /* BillPoolController.h */,
+				C52D248B1D13F62000CF6BEC /* BillPoolController.m */,
+				C52D248D1D13F66300CF6BEC /* ForeigncurrencyController.h */,
+				C52D248E1D13F66300CF6BEC /* ForeigncurrencyController.m */,
+			);
+			name = Monitor;
+			sourceTree = "<group>";
+		};
 		C5B43F951D0D70B300DABF5F /* More */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +377,8 @@
 				C5C367461D0570DD00BC2148 /* mgappTests */,
 				C5C367511D0570DE00BC2148 /* mgappUITests */,
 				C5C367281D0570DD00BC2148 /* Products */,
+				198AB48904768116EB3660B6 /* Pods */,
+				A8516C4FEB60EFA6E8CF02E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,17 +395,18 @@
 		C5C367291D0570DD00BC2148 /* mgapp */ = {
 			isa = PBXGroup;
 			children = (
+				C5B0D6F71D13A062004EF6F2 /* Monitor */,
 				C5B43F951D0D70B300DABF5F /* More */,
 				C5E371651D08283D00DDBF87 /* Common */,
 				C5E371481D07B6C200DDBF87 /* Intro */,
 				C559EA931D06DC54003FA7C9 /* Resource */,
 				C559EA8E1D06DB61003FA7C9 /* Login */,
-				C559EA7D1D06B289003FA7C9 /* News */,
 				C5C367601D05791B00BC2148 /* NeedDeal */,
 				C5C3672D1D0570DD00BC2148 /* AppDelegate.h */,
 				C5C3672E1D0570DD00BC2148 /* AppDelegate.m */,
 				C5C367301D0570DD00BC2148 /* FirstViewController.h */,
 				C5C367311D0570DD00BC2148 /* FirstViewController.m */,
+				C559EA7D1D06B289003FA7C9 /* News */,
 				C5C367331D0570DD00BC2148 /* SecondViewController.h */,
 				C5C367341D0570DD00BC2148 /* SecondViewController.m */,
 				C5C367361D0570DD00BC2148 /* Main.storyboard */,
@@ -334,6 +424,9 @@
 		C5C3672A1D0570DD00BC2148 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C52D24901D178DF100CF6BEC /* head.jpg */,
+				C52D24941D17DDAC00CF6BEC /* 驳回@3x.png */,
+				C52D24921D17DCFF00CF6BEC /* 通过@3x.png */,
 				C5C367641D057E2700BC2148 /* image */,
 				C5C3672B1D0570DD00BC2148 /* main.m */,
 			);
@@ -425,6 +518,7 @@
 		C5E371651D08283D00DDBF87 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C5B0D6F01D13A00D004EF6F2 /* YSLContainerViewController */,
 				C5E371661D08284200DDBF87 /* SlideMenu */,
 			);
 			name = Common;
@@ -516,9 +610,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5C367571D0570DE00BC2148 /* Build configuration list for PBXNativeTarget "mgapp" */;
 			buildPhases = (
+				D6628856CE2C17C1C266B779 /* Check Pods Manifest.lock */,
 				C5C367231D0570DD00BC2148 /* Sources */,
 				C5C367241D0570DD00BC2148 /* Frameworks */,
 				C5C367251D0570DD00BC2148 /* Resources */,
+				061E033AEA50AEC52B54E4ED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -645,11 +741,14 @@
 				C559EA781D06A6BC003FA7C9 /* 监控@3x.png in Resources */,
 				C559EAAE1D06DC54003FA7C9 /* keep_logo@3x.png in Resources */,
 				C5E3719E1D08648B00DDBF87 /* rightMenu.jpg in Resources */,
+				C52D24911D178DF100CF6BEC /* head.jpg in Resources */,
 				C559EAA51D06DC54003FA7C9 /* 4_circle@2x.png in Resources */,
 				C559EA731D06A67C003FA7C9 /* 新闻@2x.png in Resources */,
 				C559EAA71D06DC54003FA7C9 /* keep5.png in Resources */,
 				C5C3673D1D0570DD00BC2148 /* LaunchScreen.storyboard in Resources */,
+				C52D24931D17DCFF00CF6BEC /* 通过@3x.png in Resources */,
 				C5E3715A1D07B7A100DDBF87 /* bg_03.jpg in Resources */,
+				C52D24951D17DDAC00CF6BEC /* 驳回@3x.png in Resources */,
 				C5E371591D07B7A100DDBF87 /* bg_02.jpg in Resources */,
 				C559EA711D06A67C003FA7C9 /* 更多@2x.png in Resources */,
 				C5C3673A1D0570DD00BC2148 /* Assets.xcassets in Resources */,
@@ -678,22 +777,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		061E033AEA50AEC52B54E4ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6628856CE2C17C1C266B779 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5C367231D0570DD00BC2148 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C559EA8D1D06D3EE003FA7C9 /* ApplicantFormController.m in Sources */,
+				C52D248C1D13F62000CF6BEC /* BillPoolController.m in Sources */,
 				C5E371501D07B6DB00DDBF87 /* GHWalkThroughPageCell.m in Sources */,
 				C5C367351D0570DD00BC2148 /* SecondViewController.m in Sources */,
 				C5E371931D08290D00DDBF87 /* ProfileDetailViewController.m in Sources */,
 				C5C3672F1D0570DD00BC2148 /* AppDelegate.m in Sources */,
+				C5B0D6F51D13A00D004EF6F2 /* YSLContainerViewController.m in Sources */,
+				C52D248F1D13F66300CF6BEC /* ForeigncurrencyController.m in Sources */,
 				C5B43F981D0D70CB00DABF5F /* MoreController.m in Sources */,
+				C5B0D6FD1D13DE57004EF6F2 /* DepositController.m in Sources */,
 				C5E371511D07B6DB00DDBF87 /* GHWalkThroughView.m in Sources */,
 				C5E371901D08290D00DDBF87 /* HomeViewController.m in Sources */,
 				C5E371911D08290D00DDBF87 /* FriendsViewController.m in Sources */,
 				C5E371921D08290D00DDBF87 /* ProfileViewController.m in Sources */,
 				C5C367631D05796300BC2148 /* NeedDealCell.m in Sources */,
+				C5B0D7031D13E94D004EF6F2 /* BigClientController.m in Sources */,
+				C5B0D6F61D13A00D004EF6F2 /* YSLScrollMenuView.m in Sources */,
 				C559EA801D06B2A5003FA7C9 /* NewsCell.m in Sources */,
 				C559EA691D069573003FA7C9 /* RootTabBarController.m in Sources */,
 				C5E3717B1D08286500DDBF87 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
@@ -703,8 +841,11 @@
 				C5C367321D0570DD00BC2148 /* FirstViewController.m in Sources */,
 				C5E3717C1D08286500DDBF87 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				C5E3718F1D08290D00DDBF87 /* RightMenuViewController.m in Sources */,
+				C5B0D6FA1D13A0AF004EF6F2 /* MonitorController.m in Sources */,
 				C5C3672C1D0570DD00BC2148 /* main.m in Sources */,
+				C5B0D7001D13E64B004EF6F2 /* LoanController.m in Sources */,
 				C5E371791D08286500DDBF87 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				C52D23CC1D13EBF600CF6BEC /* BigClientChartController.m in Sources */,
 				C5E3714F1D07B6DB00DDBF87 /* SWIntroductionViewController.m in Sources */,
 				C559EA911D06DB8A003FA7C9 /* LoginController.m in Sources */,
 				C5E3718E1D08290D00DDBF87 /* LeftMenuViewController.m in Sources */,
@@ -848,6 +989,7 @@
 		};
 		C5C367581D0570DE00BC2148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3853B9E314EC68B512F8B6B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/mgapp/PrefixHeader.pch";
@@ -860,6 +1002,7 @@
 		};
 		C5C367591D0570DE00BC2148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9207027B1B6DBA62565AF50D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/mgapp/PrefixHeader.pch";

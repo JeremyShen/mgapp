@@ -33,6 +33,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.barTintColor=UIColorFromHex(0x25b6ed);
+    
+//    for (UIButton* btn in _btns) {
+//        btn.layer.cornerRadius=35;
+//        
+//    }
 //    _barItem.image = [[UIImage imageNamed:@"新闻"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    _barItem.image=[self scaleImageToSize:_barItem.image size:CGSizeMake(100, 100)];
     // Do any additional setup after loading the view, typically from a nib.

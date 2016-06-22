@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITabBarItem *barItem;
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btns;
 @end
 

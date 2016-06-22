@@ -12,4 +12,5 @@
 @property (weak, nonatomic) IBOutlet UITextView *content;
 @property (weak, nonatomic) IBOutlet UITextField *date;
 
+@property (weak, nonatomic) IBOutlet UITextView *content2;
 @end
