@@ -23,7 +23,7 @@
     vc3.title = @"大客户资金";
     
     UIViewController * vc4= [[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"billpool"];
-    vc4.title = @"票据池";
+    vc4.title = @"票据池情况";
     
     UIViewController * vc5= [[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"foreigncurrency"];
     vc5.title = @"外汇情况";

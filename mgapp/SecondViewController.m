@@ -34,7 +34,7 @@
     datas=[NSMutableArray arrayWithObjects:data1,data2,data3,data4, nil];
     self.table.delegate=self;
     self.table.dataSource=self;
-    [self.table setSeparatorInset:UIEdgeInsetsMake(0, SCREEN_WIDTH*0.3, 0, 0)];
+    [self.table setSeparatorInset:UIEdgeInsetsMake(0, SCREEN_WIDTH*0.4, 0, 0)];
     
     UIViewController *vc1 = [[UIViewController alloc] init];
     vc1.title = @"最新";

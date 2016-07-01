@@ -30,20 +30,20 @@
     self.lineChart.yFixedValueMin = 0.0;
     
     [self.lineChart setYLabels:@[
-                                 @"0 min",
-                                 @"50 min",
-                                 @"100 min",
-                                 @"150 min",
-                                 @"200 min",
-                                 @"250 min",
-                                 @"300 min",
+                                 @"0 笔数",
+                                 @"50 笔数",
+                                 @"100 笔数",
+                                 @"150 笔数",
+                                 @"200 笔数",
+                                 @"250 笔数",
+                                 @"300 笔数",
                                  ]
      ];
     
     // Line Chart #1
     NSArray * data01Array = @[@60.1, @160.1, @126.4, @0.0, @186.2, @127.2, @176.2];
     PNLineChartData *data01 = [PNLineChartData new];
-    data01.dataTitle = @"畅游";
+    data01.dataTitle = @"基准";
     data01.color = PNFreshGreen;
     data01.alpha = 0.3f;
     data01.itemCount = data01Array.count;
@@ -57,7 +57,7 @@
     // Line Chart #2
     NSArray * data02Array = @[@0.0, @180.1, @26.4, @202.2, @126.2, @167.2, @276.2];
     PNLineChartData *data02 = [PNLineChartData new];
-    data02.dataTitle = @"李拉裤";
+    data02.dataTitle = @"大众金融";
     data02.color = PNTwitterColor;
     data02.alpha = 0.5f;
     data02.itemCount = data02Array.count;

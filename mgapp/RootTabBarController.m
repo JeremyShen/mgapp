@@ -41,6 +41,10 @@
     [item3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightGrayColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
     
     [item3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColorFromHex(0x1E90FF), NSForegroundColorAttributeName,nil] forState:UIControlStateSelected];
+ 
     
 }
+-(void)viewDidLoad{
+//    [self setSelectedIndex:3];
+    }
 @end
