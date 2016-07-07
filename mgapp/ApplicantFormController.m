@@ -29,6 +29,26 @@
 //    
 //    [_text2.layer setMasksToBounds:YES];
     
+    //定义一个toolBar
+    UIToolbar * topView = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+    
+    //设置style
+    [topView setBarStyle:UIBarStyleDefault];
+    
+    //定义两个flexibleSpace的button，放在toolBar上，这样完成按钮就会在最右边
+    UIBarButtonItem * button1 =[[UIBarButtonItem  alloc]initWithBarButtonSystemItem:                                        UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    UIBarButtonItem * button2 = [[UIBarButtonItem  alloc]initWithBarButtonSystemItem:                                        UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    //定义完成按钮
+    UIBarButtonItem * doneButton = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone  target:self action:@selector(resignKeyboard)];
+    
+    //在toolBar上加上这些按钮
+    NSArray * buttonsArray = [NSArray arrayWithObjects:button1,button2,doneButton,nil];
+    [topView setItems:buttonsArray];
+    
+    [_text3 setInputAccessoryView:topView];
+    
     
     _text3.layer.borderColor = [[UIColor colorWithRed:215.0 / 255.0 green:215.0 / 255.0 blue:215.0 / 255.0 alpha:1] CGColor];
     _text3.layer.borderWidth = 0.6;
@@ -65,12 +85,10 @@
       [sender resignFirstResponder];
 }
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
-    if ([text isEqualToString:@"\n"]){ //判断输入的字是否是回车，即按下return
-        //在这里做你响应return键的代码
-        return NO; //这里返回NO，就代表return键值失效，即页面上按下return，不会出现换行，如果为yes，则输入页面会换行
-    }
-    
-    return YES;
+//隐藏键盘
+- (void)resignKeyboard {
+    [_text3 resignFirstResponder];
 }
+
+
 @end

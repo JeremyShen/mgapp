@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
+@property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (weak, nonatomic) IBOutlet UINavigationBar *nvbar;
 @end
 

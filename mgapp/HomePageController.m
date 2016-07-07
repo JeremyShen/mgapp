@@ -25,7 +25,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     _scrollView.scrollEnabled=YES;
-    [_scrollView setContentSize:CGSizeMake(0, 1100)];
+    [_scrollView setContentSize:CGSizeMake(0, 1200)];
   
 }
 - (void)viewDidLoad {
@@ -35,9 +35,23 @@
     _table.delegate=self;
     _table.dataSource=self;
     
-    for (UIButton* b in _buttons) {
-        b.layer.masksToBounds = YES; b.layer.cornerRadius=10;
+    for (UIButton* button in _buttons) {
+        
+//
+        
+        button.imageEdgeInsets = UIEdgeInsetsMake(-10,10,0,button.titleLabel.bounds.size.width);//设置image在button上的位置（上top，左left，下bottom，右right）这里可以写负值，对上写－5，那么image就象上移动5个像素
+//
+//        [button setTitle:@"首页" forState:UIControlStateNormal];//设置button的title
+        button.titleLabel.font = [UIFont systemFontOfSize:13];//title字体大小
+//        button.titleLabel.textAlignment = NSTextAlignmentCenter;//设置title的字体居中
+//        [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];//设置title在一般情况下为白色字体
+//        [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];//设置title在button被选中情况下为灰色字体
+        button.titleLabel.textColor=[UIColor lightGrayColor];
+        button.titleEdgeInsets = UIEdgeInsetsMake(80, -80, 0, 0);//设置title在button上的位置（上top，左left，下bottom，右right）
+        
     }
+    UIButton *button=_buttons[0];
+    button.titleEdgeInsets = UIEdgeInsetsMake(80, -90, 0, 0);//设置title在button上的位置（上top，左left，下
     NSString* hetong=@"合同是当事人或当事双方之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。广义合同指所有法律部门中确定权利、义务关系的协议。狭义合同指一切民事合同。还有最狭义合同仅指民事合同中的债权合同。《中华人民共和国民法通则》第85条：合同是当事人之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。《中华人民共和国合同法》第2条：合同是平等主体的自然人、法人、其他组织之间设立、变更、终止民事权利义务关系的协议。婚姻、收养、监护等有关身份关系的协议，适用其他法律的规定。";
     NSDictionary* data1=@{@"pic":@"news4.jpg",@"title":@"习近平曾寄语考生:考上可喜考不上不用悲观",@"applicant":@"申请人:陆思",@"content":hetong,@"date":@"12:30"};
     NSDictionary* data2=@{@"pic":@"news1.jpg",@"title":@"“港独”艺人何韵诗被兰蔻终止合作 要求“还公道”",@"applicant":@"申请人:李乐",@"content":hetong,@"date":@"12:30"};
@@ -65,6 +79,7 @@
     uiview.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
     [_scrollView addSubview:uiview];
     uiview.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    uiview.titlesGroup=[NSArray arrayWithObjects:@"余彭年告深圳地铁",@"打母男子被释放",@"高考658被打出走",@"刘亦菲甜笑引尖叫", nil] ;
     //         --- 轮播时间间隔，默认1.0秒，可自定义
     uiview.autoScrollTimeInterval = 3.0;
    
@@ -123,6 +138,9 @@
 }
 //  [tab setSelectedIndex:3];
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40;
+}
 
 - (IBAction)needDeal:(id)sender {
     [tab setSelectedIndex:2];

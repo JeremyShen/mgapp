@@ -9,7 +9,7 @@
 #import "FirstViewController.h"
 #import "NeedDealCell.h"
 #import "LeftMenuViewController.h"
-@interface FirstViewController ()
+@interface FirstViewController ()<UISearchBarDelegate>
 
 @end
 
@@ -24,6 +24,7 @@
 }
 - (void)viewDidLoad {
  
+    _search.delegate=self;
     UIImage *rightImage = [UIImage imageNamed:@"添加"];
     UIBarButtonItem* item= [[UIBarButtonItem alloc] initWithImage:rightImage style:UIBarButtonItemStylePlain target:self action:@selector(add:)];
     item.tintColor=[UIColor whiteColor];
@@ -95,5 +96,25 @@
     vc.navigationItem.title=@"审批单";
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)hsearchBar
+{
+    _search.showsCancelButton = YES;
+    for(id cc in [_search subviews])
+    {
+        if([cc isKindOfClass:[UIButton class]])
+        {
+            UIButton *btn = (UIButton *)cc;
+            [btn setTitle:@"取消" forState:UIControlStateNormal];
+        }
+    }
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar __TVOS_PROHIBITED{
+
+    [_search resignFirstResponder];
+        _search.showsCancelButton = NO;
+}   // called when cancel button pressed
+
 
 @end

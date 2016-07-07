@@ -76,6 +76,12 @@
 		C57900991D251A9B00201E0D /* BigClientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C57900971D251A9B00201E0D /* BigClientCell.m */; };
 		C579009A1D251A9B00201E0D /* BigClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57900981D251A9B00201E0D /* BigClientCell.xib */; };
 		C579009C1D261A3300201E0D /* 首@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C579009B1D261A3300201E0D /* 首@2x.png */; };
+		C58B3D931D2D02DD00574259 /* 资金.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D921D2D02DD00574259 /* 资金.png */; };
+		C58B3D981D2D038000574259 /* 公告b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D941D2D038000574259 /* 公告b.png */; };
+		C58B3D991D2D038000574259 /* 新闻b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D951D2D038000574259 /* 新闻b.png */; };
+		C58B3D9A1D2D038000574259 /* 排行b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D961D2D038000574259 /* 排行b.png */; };
+		C58B3D9B1D2D038000574259 /* 待办b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D971D2D038000574259 /* 待办b.png */; };
+		C58B3D9D1D2D1E6E00574259 /* 资金b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D9C1D2D1E6E00574259 /* 资金b.png */; };
 		C5B0D6F51D13A00D004EF6F2 /* YSLContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */; };
 		C5B0D6F61D13A00D004EF6F2 /* YSLScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F41D13A00D004EF6F2 /* YSLScrollMenuView.m */; };
 		C5B0D6FA1D13A0AF004EF6F2 /* MonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F91D13A0AF004EF6F2 /* MonitorController.m */; };
@@ -252,6 +258,12 @@
 		C57900971D251A9B00201E0D /* BigClientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigClientCell.m; sourceTree = "<group>"; };
 		C57900981D251A9B00201E0D /* BigClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigClientCell.xib; sourceTree = "<group>"; };
 		C579009B1D261A3300201E0D /* 首@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首@2x.png"; sourceTree = "<group>"; };
+		C58B3D921D2D02DD00574259 /* 资金.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资金.png"; sourceTree = "<group>"; };
+		C58B3D941D2D038000574259 /* 公告b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "公告b.png"; sourceTree = "<group>"; };
+		C58B3D951D2D038000574259 /* 新闻b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻b.png"; sourceTree = "<group>"; };
+		C58B3D961D2D038000574259 /* 排行b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "排行b.png"; sourceTree = "<group>"; };
+		C58B3D971D2D038000574259 /* 待办b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "待办b.png"; sourceTree = "<group>"; };
+		C58B3D9C1D2D1E6E00574259 /* 资金b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资金b.png"; sourceTree = "<group>"; };
 		C5B0D6F11D13A00D004EF6F2 /* YSLContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLContainerViewController.h; sourceTree = "<group>"; };
 		C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLContainerViewController.m; sourceTree = "<group>"; };
 		C5B0D6F31D13A00D004EF6F2 /* YSLScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLScrollMenuView.h; sourceTree = "<group>"; };
@@ -610,6 +622,7 @@
 		C5C3672A1D0570DD00BC2148 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C58B3D921D2D02DD00574259 /* 资金.png */,
 				C579008B1D24C8E300201E0D /* h1.jpg */,
 				C579008C1D24C8E300201E0D /* h3.jpg */,
 				C579008D1D24C8E300201E0D /* h2.jpg */,
@@ -655,6 +668,11 @@
 		C5C367641D057E2700BC2148 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				C58B3D9C1D2D1E6E00574259 /* 资金b.png */,
+				C58B3D941D2D038000574259 /* 公告b.png */,
+				C58B3D951D2D038000574259 /* 新闻b.png */,
+				C58B3D961D2D038000574259 /* 排行b.png */,
+				C58B3D971D2D038000574259 /* 待办b.png */,
 				C5E371521D07B79300DDBF87 /* intro */,
 				C559EA891D06D37A003FA7C9 /* 附件.png */,
 				C559EA811D06B40F003FA7C9 /* news1.jpg */,
@@ -923,9 +941,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58B3D991D2D038000574259 /* 新闻b.png in Resources */,
 				C5C367721D058F0E00BC2148 /* hetong4.png in Resources */,
 				C5C367701D058B8E00BC2148 /* hetong3.png in Resources */,
 				C5E371601D0814C400DDBF87 /* menu-button@2x.png in Resources */,
+				C58B3D9D1D2D1E6E00574259 /* 资金b.png in Resources */,
 				C5F908AE1D1BB7A800198F2A /* bg_03.jpg in Resources */,
 				C5E3719F1D08648B00DDBF87 /* leftMenu.jpg in Resources */,
 				C57900911D24C8E300201E0D /* h2.jpg in Resources */,
@@ -940,6 +960,7 @@
 				C559EAA61D06DC54003FA7C9 /* 4_circle_on@2x.png in Resources */,
 				C5E371A01D08648B00DDBF87 /* animation.png in Resources */,
 				C559EA861D06B40F003FA7C9 /* news2.jpg in Resources */,
+				C58B3D9A1D2D038000574259 /* 排行b.png in Resources */,
 				C559EA6D1D06A619003FA7C9 /* 待办@2x.png in Resources */,
 				C559EAA41D06DC54003FA7C9 /* 4_circle.png in Resources */,
 				C5E371641D08158B00DDBF87 /* 添加@2x.png in Resources */,
@@ -960,9 +981,11 @@
 				C559EAA51D06DC54003FA7C9 /* 4_circle@2x.png in Resources */,
 				C559EA731D06A67C003FA7C9 /* 新闻@2x.png in Resources */,
 				C559EAA71D06DC54003FA7C9 /* keep5.png in Resources */,
+				C58B3D981D2D038000574259 /* 公告b.png in Resources */,
 				C57900901D24C8E300201E0D /* h3.jpg in Resources */,
 				C5C3673D1D0570DD00BC2148 /* LaunchScreen.storyboard in Resources */,
 				C52D24931D17DCFF00CF6BEC /* 通过@3x.png in Resources */,
+				C58B3D9B1D2D038000574259 /* 待办b.png in Resources */,
 				C579009A1D251A9B00201E0D /* BigClientCell.xib in Resources */,
 				C52D24951D17DDAC00CF6BEC /* 驳回@3x.png in Resources */,
 				C5F908AC1D1BB7A800198F2A /* bg_01.jpg in Resources */,
@@ -975,6 +998,7 @@
 				C559EAB11D06DC54003FA7C9 /* keepkeep@3x.png in Resources */,
 				C579008F1D24C8E300201E0D /* h1.jpg in Resources */,
 				C57900921D24C8E300201E0D /* h4.jpg in Resources */,
+				C58B3D931D2D02DD00574259 /* 资金.png in Resources */,
 				C5E3715E1D07BD3400DDBF87 /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
