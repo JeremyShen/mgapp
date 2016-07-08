@@ -151,7 +151,7 @@
 }
 
 - (IBAction)checkA:(id)sender {
-    [tab setSelectedIndex:3];
+    [tab setSelectedIndex:1];
 }
 
 - (IBAction)monitorA:(id)sender {

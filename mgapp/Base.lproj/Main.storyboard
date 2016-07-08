@@ -15,6 +15,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sct-YX-WSY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.14509803921568626" green="0.71372549019607845" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <color key="textShadowColor" red="0.17928685899999999" green="0.17928685899999999" blue="0.17928685899999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -22,7 +23,6 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <outlet property="navBar" destination="sct-YX-WSY" id="5Lj-qa-6wL"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="GGE-Gm-F0o"/>
                     </connections>
                 </navigationController>
@@ -2073,8 +2073,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="head" destination="N4J-ZS-IHi" id="GMo-KO-No9"/>
-                        <outlet property="tableView" destination="umL-Iv-lMs" id="OaV-rG-SEJ"/>
+                        <outlet property="head" destination="N4J-ZS-IHi" id="D24-OP-5jN"/>
+                        <outlet property="tableView1" destination="umL-Iv-lMs" id="in5-oL-tcR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKp-Xh-WNh" userLabel="First Responder" sceneMemberID="firstResponder"/>

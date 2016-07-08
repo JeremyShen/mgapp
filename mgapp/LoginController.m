@@ -67,7 +67,7 @@
     [_moviePlayer play];
     [_moviePlayer.view setFrame:self.view.bounds];
     
-    [self.view addSubview:_moviePlayer.view];
+//    [self.view addSubview:_moviePlayer.view];
     _moviePlayer.shouldAutoplay = YES;
     [_moviePlayer setControlStyle:MPMovieControlStyleNone];
     [_moviePlayer setFullscreen:YES];
@@ -80,9 +80,10 @@
                                                object:_moviePlayer];
     
     
-    _alpaView.backgroundColor = [UIColor clearColor];
     
-    [_moviePlayer.view addSubview:_alpaView];
+    _alpaView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
+    [self.view addSubview:_alpaView];
     
     self.regiset.layer.cornerRadius = 3.0f;
     self.regiset.alpha = 0.4f;
