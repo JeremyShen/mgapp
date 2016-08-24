@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *mobile;
+@property (weak, nonatomic) IBOutlet UITextField *psw;
 
 @end

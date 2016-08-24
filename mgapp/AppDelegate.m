@@ -12,6 +12,7 @@
 #import "SWIntroductionViewController.h"
 #import "LeftMenuViewController.h"
 #import "RightMenuViewController.h"
+#import "DemoVC10.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +24,7 @@
     
     
     // Override point for customization after application launch.
-    NSString* flag=[[NSUserDefaults standardUserDefaults] objectForKey:@"User"];
+    NSString* flag=[[NSUserDefaults standardUserDefaults] objectForKey:@"mobile"];
     if( flag==nil){
         SWIntroductionViewController *vc = [[SWIntroductionViewController alloc]init];
         self.window.rootViewController = vc;
@@ -31,6 +32,8 @@
         FirstViewController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"initView"];
             self.window.rootViewController = vc;
     }
+//    DemoVC10 *vc=[[DemoVC10 alloc] init];
+//    self.window.rootViewController =vc;
     return YES;
 }
 

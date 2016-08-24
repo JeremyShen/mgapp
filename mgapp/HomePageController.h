@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
-@interface HomePageController : UIViewController<SDCycleScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface HomePageController : UIViewController<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 //@property (weak, nonatomic) IBOutlet SDCycleScrollView *uiview;
 @property (weak, nonatomic) IBOutlet UITableView *table;

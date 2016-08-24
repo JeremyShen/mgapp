@@ -9,6 +9,9 @@
 #import "LoginController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
+#import "HttpPost.h"
+#import "XYString.h"
+#import "LGAlertView.h"
 @interface LoginController ()<UITextFieldDelegate>
 @property(nonatomic,strong)MPMoviePlayerController *moviePlayer;
 @property(nonatomic ,strong)NSTimer *timer;
@@ -53,7 +56,8 @@
     NSError *error = nil;
     [self.avaudioSession setCategory:AVAudioSessionCategoryAmbient error:&error];
     
-    
+    _mobile.text=@"18210324011";
+    _psw.text=@"123456";
     
     NSString *urlStr = [[NSBundle mainBundle]pathForResource:@"1.mp4" ofType:nil];
     
@@ -249,12 +253,44 @@
 }
 - (IBAction)nextAction:(id)sender {
     
- [[NSUserDefaults standardUserDefaults] setValue:@"LUSI" forKey:@"User"];
+    NSString * urlString = @"http://182.92.129.168:8080/cyt/login";
+    NSDictionary* params=@{@"data":@{@"mobile":_mobile.text,@"pwd":_psw.text}};
+    [HttpPost post:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *dict = [XYString getObjectFromJsonString:operation.responseString];
+        NSString* sucessful=dict[@"sucessful"];
+        if (sucessful.intValue==1) {
+            NSString* mobile=dict[@"data"][@"mobile"];
+            [[NSUserDefaults standardUserDefaults] setValue:mobile forKey:@"mobile"];
+            
+            UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+            UIViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
+            [_moviePlayer stop];
+            [self presentViewController:vc animated:YES completion:nil];
+        }else{
+            [[[LGAlertView alloc] initWithTitle:@"退出登录"
+                                        message:nil
+                                          style:LGAlertViewStyleActionSheet
+                                   buttonTitles:@[dict[@"msg"]]
+                              cancelButtonTitle:@"取消"
+                         destructiveButtonTitle:nil
+                                  actionHandler:^(LGAlertView *alertView, NSString *title, NSUInteger index) {
+                                      NSLog(@"actionHandler, %@, %lu", title, (long unsigned)index);
+                                   
+                                  }
+                                  cancelHandler:^(LGAlertView *alertView) {
+                                      NSLog(@"cancelHandler");
+                                  }
+                             destructiveHandler:^(LGAlertView *alertView) {
+                                 NSLog(@"destructiveHandler");
+                             }] showAnimated:YES completionHandler:nil];
+
+        }
+      
+        
+    } ];
+
     
-    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
-    UIViewController *vc=[board instantiateViewControllerWithIdentifier:@"initView"];
-     [_moviePlayer stop];
-    [self presentViewController:vc animated:YES completion:nil];
+    
    
 }
 @end

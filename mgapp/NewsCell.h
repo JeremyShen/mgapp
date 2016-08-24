@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NewsModel.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 @interface NewsCell : UITableViewCell
-@property (strong, nonatomic) NSDictionary *data;
+@property (strong, nonatomic) NewsModel *data;
 @property (weak, nonatomic) IBOutlet UIImageView *imv;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end

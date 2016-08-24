@@ -11,7 +11,13 @@
 #import "NewsCell.h"
 #import "BigClientCell.h"
 #import "FirstViewController.h"
+#import "HttpPost.h"
 #import "RootTabBarController.h"
+#import "XYString.h"
+#import "UIView+SDAutoLayout.h"
+#import "MJExtension.h"
+#import "NewsDetailController.h"
+#import "ThreeModel.h"  
 @interface HomePageController ()<UITabBarControllerDelegate>
 
 @end
@@ -20,20 +26,54 @@
 {
     NSMutableArray* datas;
       RootTabBarController *tab;
+    CGFloat contentHeight;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
-    _scrollView.scrollEnabled=YES;
-    [_scrollView setContentSize:CGSizeMake(0, 1200)];
+  
+   
   
 }
+
+- (void)viewDidLayoutSubviews{
+
+}
+
+#pragma mark - 请求数据
+-(void)loadData{
+    NSString * urlString = @"http://182.92.129.168:8080/cyt/news/list";
+    NSDictionary* params=@{@"pageSize":@"10",@"pageIndex":@"1"};
+   
+    [HttpPost post:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+       
+        NSDictionary *dict = [XYString getObjectFromJsonString:operation.responseString];
+        NSArray *data=dict[@"data"];
+        // 数组>>model数组
+        datas = [NSMutableArray arrayWithArray:[NewsModel mj_objectArrayWithKeyValuesArray:data]];
+        _table.delegate=self;
+        _table.dataSource=self;
+        [_table reloadData];
+        _scrollView.scrollEnabled=YES;
+//        self.scrollView.sd_layout
+//        .leftSpaceToView(self.view, 0)
+//        .topSpaceToView(self.view, 0)
+//        .rightSpaceToView(self.view, 0);
+//        
+        // 设置view1高度根据子其内容自适应
+//        [self.scrollView setupAutoHeightWithBottomView: bottomMargin:10];
+    } ];
+}
+
+
 - (void)viewDidLoad {
+      [super viewDidLoad];
+    
+   
+   
     tab=self.tabBarController;
     tab.delegate=self;
-    [super viewDidLoad];
-    _table.delegate=self;
-    _table.dataSource=self;
+   
+   
     
     for (UIButton* button in _buttons) {
         
@@ -52,19 +92,7 @@
     }
     UIButton *button=_buttons[0];
     button.titleEdgeInsets = UIEdgeInsetsMake(80, -90, 0, 0);//设置title在button上的位置（上top，左left，下
-    NSString* hetong=@"合同是当事人或当事双方之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。广义合同指所有法律部门中确定权利、义务关系的协议。狭义合同指一切民事合同。还有最狭义合同仅指民事合同中的债权合同。《中华人民共和国民法通则》第85条：合同是当事人之间设立、变更、终止民事关系的协议。依法成立的合同，受法律保护。《中华人民共和国合同法》第2条：合同是平等主体的自然人、法人、其他组织之间设立、变更、终止民事权利义务关系的协议。婚姻、收养、监护等有关身份关系的协议，适用其他法律的规定。";
-    NSDictionary* data1=@{@"pic":@"news4.jpg",@"title":@"习近平曾寄语考生:考上可喜考不上不用悲观",@"applicant":@"申请人:陆思",@"content":hetong,@"date":@"12:30"};
-    NSDictionary* data2=@{@"pic":@"news1.jpg",@"title":@"“港独”艺人何韵诗被兰蔻终止合作 要求“还公道”",@"applicant":@"申请人:李乐",@"content":hetong,@"date":@"12:30"};
-    NSDictionary* data3=@{@"pic":@"news2.jpg",@"title":@"国际原子能机构：朝鲜似乎已重新开启炼钚厂",@"applicant":@"申请人:余叫兽",@"content":hetong,@"date":@"12:30"};
-    NSDictionary* data4=@{@"pic":@"news3.jpg",@"title":@"男子“拼车”被骗1.6万 除自己外满车都是骗子",@"applicant":@"申请人:李拉裤",@"content":hetong,@"date":@"12:30"};
-    datas=[NSMutableArray arrayWithObjects:data1,data2,data3,data4, nil];
-    
-//    UIScrollView *demoContainerView = [[UIScrollView alloc] initWithFrame:self.view.frame];
- 
-//    [_scrollView setBackgroundColor:[UIColor blueColor]];
-//    [self.view addSubview:_scrollView];
-    
-//    self.title = @"轮播Demo";
+
     // 情景一：采用本地图片实现
     NSArray *imageNames = @[@"h1.jpg",
                             @"h2.jpg",
@@ -82,6 +110,8 @@
     uiview.titlesGroup=[NSArray arrayWithObjects:@"余彭年告深圳地铁",@"打母男子被释放",@"高考658被打出走",@"刘亦菲甜笑引尖叫", nil] ;
     //         --- 轮播时间间隔，默认1.0秒，可自定义
     uiview.autoScrollTimeInterval = 3.0;
+    contentHeight+=400;
+    [self loadData];
    
     
 }
@@ -103,10 +133,12 @@
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return datas.count;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    contentHeight+=_table.rowHeight;
+    [_scrollView setContentSize:CGSizeMake(0, contentHeight)];
     if (indexPath.section==0) {
         static NSString *identifier = @"newsCell";
         NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -115,6 +147,7 @@
             cell = [[NewsCell alloc] initWithStyle: UITableViewCellStyleSubtitle  reuseIdentifier:identifier];
         }
         cell.data=datas[indexPath.row];
+        
         return cell;
     }else{
         static NSString *identifier = @"bigclientCell";
@@ -131,16 +164,24 @@
             
         }
         _table.rowHeight=90;
+     
+        
 //        cell.textLabel.text=@"xxxxx";
         return cell;
     }
-    
+ 
 }
 //  [tab setSelectedIndex:3];
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 40;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NewsDetailController *vc=[[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"NewsDetailController"];
+    //    vc.navigmationItem.title=@"审批单";
+    ThreeModel * threeModel = datas[indexPath.row];
+    vc.model=threeModel;
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
+
 
 - (IBAction)needDeal:(id)sender {
     [tab setSelectedIndex:2];
