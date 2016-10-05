@@ -57,7 +57,7 @@
 	UIViewController *menuViewController = (menu == MenuLeft)
 		? [SlideNavigationController sharedInstance].leftMenu
 		: [SlideNavigationController sharedInstance].rightMenu;
-	
+
 	menuViewController.view.transform = CGAffineTransformScale(menuViewController.view.transform, self.minimumScale, self.minimumScale);
 }
 

@@ -12,6 +12,7 @@
 #import "SlideNavigationContorllerAnimatorScale.h"
 #import "SlideNavigationContorllerAnimatorScaleAndFade.h"
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
+#import "FSMediaPicker.h"
 
 @implementation LeftMenuViewController
 
@@ -29,12 +30,15 @@
 	[super viewDidLoad];
 	
 	self.tableView1.separatorColor = [UIColor lightGrayColor];
-	
+    self.tableView1.delegate=self;
+    self.tableView1.dataSource=self;
     self.head.layer.masksToBounds=YES;
-    
+    [self.head setUserInteractionEnabled:YES];
     self.head.layer.cornerRadius= self.head.frame.size.width/2;
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
-//	self.tableView1.backgroundView = imageView;
+    UITapGestureRecognizer *labelTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showClicked:)];
+    [self.head addGestureRecognizer:labelTapGestureRecognizer];
+//	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
+
 }
 
 #pragma mark - UITableView Delegate & Datasrouce -
@@ -91,30 +95,57 @@
 //	
 //	UIViewController *vc ;
 //	
-//	switch (indexPath.row)
-//	{
-//		case 0:
-//			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
-//			break;
-//			
-//		case 1:
-//			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
-//			break;
-//			
-//		case 2:
-//			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
-//			break;
-//			
-//		case 3:
-//			[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
-//			[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
-//			return;
-//			break;
-//	}
-//	
+	switch (indexPath.row)
+	{
+		case 0:
+			
+            break;
+			
+		case 1:
+			
+			break;
+			
+		case 2:
+			
+			break;
+			
+		case 3:
+			
+			return;
+			break;
+	}
+//
 //	[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
 //															 withSlideOutAnimation:self.slideOutAnimationEnabled
 //																	 andCompletion:nil];
 }
+- (void)showClicked:(id)sender
+{
+    FSMediaPicker *mediaPicker = [[FSMediaPicker alloc] init];
+    mediaPicker.mediaType = 0;
+    mediaPicker.editMode = 0;
+    mediaPicker.delegate = self;
+    [mediaPicker showFromView:self.view];
+}
+- (void)mediaPicker:(FSMediaPicker *)mediaPicker didFinishWithMediaInfo:(NSDictionary *)mediaInfo
+{
+    //    if (mediaInfo.mediaType == FSMediaTypeVideo) {
+    //        self.player.contentURL = mediaInfo.mediaURL;
+    //        [self.player play];
+    //    } else {
+    //        [self.headView setTitle:nil ];
+    if (mediaPicker.editMode == FSEditModeNone) {
+        [self.head setImage:mediaInfo.originalImage ];
+    } else {
+        [self.head setImage:mediaPicker.editMode == FSEditModeCircular? mediaInfo.circularEditedImage:mediaInfo.editedImage];
+    }
+    //    }
+}
+
+- (void)mediaPickerDidCancel:(FSMediaPicker *)mediaPicker
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
 
 @end

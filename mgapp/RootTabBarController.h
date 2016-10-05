@@ -11,4 +11,5 @@
 @interface RootTabBarController : UITabBarController
 
 @property (weak, nonatomic) IBOutlet UITabBar *rootTabBar;
+- (void)makeTabBarHidden:(BOOL)hide;
 @end

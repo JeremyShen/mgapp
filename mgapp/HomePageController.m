@@ -18,6 +18,7 @@
 #import "MJExtension.h"
 #import "NewsDetailController.h"
 #import "ThreeModel.h"  
+#import "LeftMenuViewController.h"
 @interface HomePageController ()<UITabBarControllerDelegate>
 
 @end
@@ -41,6 +42,7 @@
 
 #pragma mark - 请求数据
 -(void)loadData{
+    
     NSString * urlString = @"http://182.92.129.168:8080/cyt/news/list";
     NSDictionary* params=@{@"pageSize":@"10",@"pageIndex":@"1"};
    
@@ -67,9 +69,12 @@
 
 - (void)viewDidLoad {
       [super viewDidLoad];
+    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main"bundle:nil];
+    LeftMenuViewController *leftMenu=[board instantiateViewControllerWithIdentifier:@"LeftMenuViewController"];
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .38;
+   
     
-   
-   
     tab=self.tabBarController;
     tab.delegate=self;
    
@@ -197,5 +202,15 @@
 
 - (IBAction)monitorA:(id)sender {
     [tab setSelectedIndex:3];
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return NO;
 }
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DealModel.h"
+#import "ThreeFirstCell.h"
+#import "ThreeModel.h"
+#import "SDWebImage/UIImageView+WebCache.h"
+@interface NeedDealCell : ThreeBaseCell
 
-@interface NeedDealCell : UITableViewCell
-
-@property (strong, nonatomic) NSDictionary *data;
 @property (weak, nonatomic) IBOutlet UIImageView *imv;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLable;

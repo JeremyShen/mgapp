@@ -12,6 +12,8 @@
 #import "HttpPost.h"
 #import "XYString.h"
 #import "LGAlertView.h"
+#import "NSString+Extension.h"
+
 @interface LoginController ()<UITextFieldDelegate>
 @property(nonatomic,strong)MPMoviePlayerController *moviePlayer;
 @property(nonatomic ,strong)NSTimer *timer;
@@ -253,7 +255,8 @@
 }
 - (IBAction)nextAction:(id)sender {
     
-    NSString * urlString = @"http://182.92.129.168:8080/cyt/login";
+    //登录
+    NSString * urlString = @"http://182.92.129.168:8080/cyt/app/login";
     NSDictionary* params=@{@"data":@{@"mobile":_mobile.text,@"pwd":_psw.text}};
     [HttpPost post:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *dict = [XYString getObjectFromJsonString:operation.responseString];
@@ -267,10 +270,14 @@
             [_moviePlayer stop];
             [self presentViewController:vc animated:YES completion:nil];
         }else{
+            NSString* msg=@"登录失败";
+            if (StringNotNullAndEmpty(dict[@"msg"])) {
+                msg=dict[@"msg"];
+            }
             [[[LGAlertView alloc] initWithTitle:@"退出登录"
                                         message:nil
                                           style:LGAlertViewStyleActionSheet
-                                   buttonTitles:@[dict[@"msg"]]
+                                   buttonTitles:@[msg]
                               cancelButtonTitle:@"取消"
                          destructiveButtonTitle:nil
                                   actionHandler:^(LGAlertView *alertView, NSString *title, NSUInteger index) {

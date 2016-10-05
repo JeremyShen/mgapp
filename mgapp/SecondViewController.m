@@ -33,9 +33,9 @@
 
 #pragma mark - 请求数据
 -(void)loadData{
-    NSString * urlString = @"http://182.92.129.168:8080/cyt/news/list";
+//    NSString * urlString = @"http://182.92.129.168:8080/cyt/news/list";
     NSDictionary* params=@{@"pageSize":@"10",@"pageIndex":@"1"};
-    [HttpPost post:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [HttpPost post:NEWS_LIST parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *dict = [XYString getObjectFromJsonString:operation.responseString];
         NSArray *data=dict[@"data"];
         // 数组>>model数组

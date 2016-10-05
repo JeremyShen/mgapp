@@ -8,7 +8,7 @@
 
 #import "MoreController.h"
 #import "LGAlertView.h"
-
+#import "RootTabBarController.h"
 @implementation MoreController
 {
 //    NSMutableArray *datas;
@@ -22,6 +22,7 @@
     sec=@{@"0":datas1,@"1":datas2,@"2":datas3,@"3":datas4};
     self.table.delegate=self;
     self.table.dataSource=self;
+
 }
 
 
@@ -82,4 +83,5 @@
 -(void)logout{
     
 }
+
 @end

@@ -174,6 +174,11 @@
 		C58B3D9A1D2D038000574259 /* 排行b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D961D2D038000574259 /* 排行b.png */; };
 		C58B3D9B1D2D038000574259 /* 待办b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D971D2D038000574259 /* 待办b.png */; };
 		C58B3D9D1D2D1E6E00574259 /* 资金b.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B3D9C1D2D1E6E00574259 /* 资金b.png */; };
+		C58ECA5D1D9119A50070896E /* FSMediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58ECA5B1D9119A50070896E /* FSMediaPicker.m */; };
+		C58ECA601D93C6BD0070896E /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C58ECA5F1D93C6BD0070896E /* NSString+Extension.m */; };
+		C58ECA631D94C19F0070896E /* DealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C58ECA621D94C19F0070896E /* DealModel.m */; };
+		C58ECA661D94C7CB0070896E /* DealDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C58ECA651D94C7CB0070896E /* DealDataModel.m */; };
+		C58ECA6C1D95231A0070896E /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58ECA6B1D95231A0070896E /* TextCell.m */; };
 		C5B0D6F51D13A00D004EF6F2 /* YSLContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */; };
 		C5B0D6F61D13A00D004EF6F2 /* YSLScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F41D13A00D004EF6F2 /* YSLScrollMenuView.m */; };
 		C5B0D6FA1D13A0AF004EF6F2 /* MonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B0D6F91D13A0AF004EF6F2 /* MonitorController.m */; };
@@ -517,6 +522,16 @@
 		C58B3D961D2D038000574259 /* 排行b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "排行b.png"; sourceTree = "<group>"; };
 		C58B3D971D2D038000574259 /* 待办b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "待办b.png"; sourceTree = "<group>"; };
 		C58B3D9C1D2D1E6E00574259 /* 资金b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资金b.png"; sourceTree = "<group>"; };
+		C58ECA5A1D9119A50070896E /* FSMediaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaPicker.h; sourceTree = "<group>"; };
+		C58ECA5B1D9119A50070896E /* FSMediaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaPicker.m; sourceTree = "<group>"; };
+		C58ECA5E1D93C6BD0070896E /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		C58ECA5F1D93C6BD0070896E /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		C58ECA611D94C19F0070896E /* DealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealModel.h; sourceTree = "<group>"; };
+		C58ECA621D94C19F0070896E /* DealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealModel.m; sourceTree = "<group>"; };
+		C58ECA641D94C7CB0070896E /* DealDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealDataModel.h; sourceTree = "<group>"; };
+		C58ECA651D94C7CB0070896E /* DealDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealDataModel.m; sourceTree = "<group>"; };
+		C58ECA6A1D95231A0070896E /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		C58ECA6B1D95231A0070896E /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
 		C5B0D6F11D13A00D004EF6F2 /* YSLContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLContainerViewController.h; sourceTree = "<group>"; };
 		C5B0D6F21D13A00D004EF6F2 /* YSLContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLContainerViewController.m; sourceTree = "<group>"; };
 		C5B0D6F31D13A00D004EF6F2 /* YSLScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLScrollMenuView.h; sourceTree = "<group>"; };
@@ -834,6 +849,8 @@
 				C550B4BD1D585D18003FD45E /* ThreeSecondCell.m */,
 				C550B4BE1D585D18003FD45E /* ThreeThirdCell.h */,
 				C550B4BF1D585D18003FD45E /* ThreeThirdCell.m */,
+				C58ECA6A1D95231A0070896E /* TextCell.h */,
+				C58ECA6B1D95231A0070896E /* TextCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1165,6 +1182,16 @@
 			name = HomePage;
 			sourceTree = "<group>";
 		};
+		C58ECA5C1D9119A50070896E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C58ECA5A1D9119A50070896E /* FSMediaPicker.h */,
+				C58ECA5B1D9119A50070896E /* FSMediaPicker.m */,
+			);
+			name = Header;
+			path = ../../wodcn/wodcn;
+			sourceTree = "<group>";
+		};
 		C5B0D6F01D13A00D004EF6F2 /* YSLContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1303,6 +1330,10 @@
 				C5C367621D05796300BC2148 /* NeedDealCell.m */,
 				C559EA8B1D06D3EE003FA7C9 /* ApplicantFormController.h */,
 				C559EA8C1D06D3EE003FA7C9 /* ApplicantFormController.m */,
+				C58ECA611D94C19F0070896E /* DealModel.h */,
+				C58ECA621D94C19F0070896E /* DealModel.m */,
+				C58ECA641D94C7CB0070896E /* DealDataModel.h */,
+				C58ECA651D94C7CB0070896E /* DealDataModel.m */,
 			);
 			name = NeedDeal;
 			sourceTree = "<group>";
@@ -1389,6 +1420,9 @@
 		C5E371651D08283D00DDBF87 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C58ECA5E1D93C6BD0070896E /* NSString+Extension.h */,
+				C58ECA5F1D93C6BD0070896E /* NSString+Extension.m */,
+				C58ECA5C1D9119A50070896E /* Header */,
 				C550B4331D585D18003FD45E /* DemoVC10 */,
 				C550B42B1D585CE2003FD45E /* SDAutoLayout */,
 				C57900701D24C5A900201E0D /* SDCycleScrollView */,
@@ -1482,7 +1516,7 @@
 				TargetAttributes = {
 					C5C367261D0570DD00BC2148 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 2T95THMZG9;
+						DevelopmentTeam = JBE83BE297;
 					};
 					C5C367421D0570DD00BC2148 = {
 						CreatedOnToolsVersion = 7.3;
@@ -1671,6 +1705,7 @@
 				C550B4D81D585D18003FD45E /* MJPropertyKey.m in Sources */,
 				C550B58C1D585E53003FD45E /* UIView+SDExtension.m in Sources */,
 				C5E371501D07B6DB00DDBF87 /* GHWalkThroughPageCell.m in Sources */,
+				C58ECA5D1D9119A50070896E /* FSMediaPicker.m in Sources */,
 				C5DC7CAC1D1A35C900B06514 /* LGAlertViewButtonProperties.m in Sources */,
 				C550B4E41D585D18003FD45E /* MJRefreshHeader.m in Sources */,
 				C550B4DC1D585D18003FD45E /* NSObject+MJKeyValue.m in Sources */,
@@ -1688,6 +1723,7 @@
 				C573CE8B1D2F4519004AE7A5 /* ProfileDetailViewController.m in Sources */,
 				C550B5E11D619D55003FD45E /* NewsModel.m in Sources */,
 				C52D248F1D13F66300CF6BEC /* ForeigncurrencyController.m in Sources */,
+				C58ECA661D94C7CB0070896E /* DealDataModel.m in Sources */,
 				C550B5781D585E53003FD45E /* MLLabelLayoutManager.m in Sources */,
 				C550B5851D585E53003FD45E /* SDBrowserImageView.m in Sources */,
 				C57900601D24C48E00201E0D /* MKAnnotationView+WebCache.m in Sources */,
@@ -1698,6 +1734,7 @@
 				C550B5871D585E53003FD45E /* SDWaitingView.m in Sources */,
 				C5B0D6FD1D13DE57004EF6F2 /* DepositController.m in Sources */,
 				C550B5861D585E53003FD45E /* SDPhotoBrowser.m in Sources */,
+				C58ECA631D94C19F0070896E /* DealModel.m in Sources */,
 				C579006E1D24C48E00201E0D /* UIImageView+WebCache.m in Sources */,
 				C550B4FB1D585D18003FD45E /* ThreeFourthCell.m in Sources */,
 				C550B4E01D585D18003FD45E /* MJRefreshAutoFooter.m in Sources */,
@@ -1718,8 +1755,10 @@
 				C550B5721D585E53003FD45E /* NSMutableAttributedString+MLLabel.m in Sources */,
 				C550B4E71D585D18003FD45E /* MJRefreshAutoStateFooter.m in Sources */,
 				C550B58B1D585E53003FD45E /* SDRefreshView.m in Sources */,
+				C58ECA6C1D95231A0070896E /* TextCell.m in Sources */,
 				C57900841D24C5A900201E0D /* SDCollectionViewCell.m in Sources */,
 				C573CE8C1D2F4519004AE7A5 /* ProfileViewController.m in Sources */,
+				C58ECA601D93C6BD0070896E /* NSString+Extension.m in Sources */,
 				C579006A1D24C48E00201E0D /* UIImage+GIF.m in Sources */,
 				C579006D1D24C48E00201E0D /* UIImageView+HighlightedWebCache.m in Sources */,
 				C550B4E51D585D18003FD45E /* MJRefreshAutoGifFooter.m in Sources */,

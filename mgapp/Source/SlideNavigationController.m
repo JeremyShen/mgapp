@@ -484,7 +484,9 @@ static SlideNavigationController *singletonInstance;
 						  delay:0
 						options:self.menuRevealAnimationOption
 					 animations:^{
-						 CGRect rect = self.view.frame;
+                         UIView* a=self.view.window.subviews[1];
+//                         NSArray* b=self.view.subviews;
+						 CGRect rect = a.frame;
 						 CGFloat width = self.horizontalSize;
 						 rect.origin.x = (menu == MenuLeft) ? (width - self.slideOffset) : ((width - self.slideOffset )* -1);
 						 [self moveHorizontallyToLocation:rect.origin.x];
@@ -521,7 +523,8 @@ static SlideNavigationController *singletonInstance;
 
 - (void)moveHorizontallyToLocation:(CGFloat)location
 {
-	CGRect rect = self.view.frame;
+    UIView* a=self.view.window.subviews[1];
+	CGRect rect = a.frame;
 	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 	Menu menu = (self.horizontalLocation >= 0 && location >= 0) ? MenuLeft : MenuRight;
     
@@ -548,7 +551,7 @@ static SlideNavigationController *singletonInstance;
         }
     }
 	
-	self.view.frame = rect;
+	a.frame = rect;
 	[self updateMenuAnimation:menu];
 }
 
@@ -602,11 +605,23 @@ static SlideNavigationController *singletonInstance;
     self.lastRevealedMenu = menu;
 	
 	[removingMenuViewController.view removeFromSuperview];
+    
+    
+    
+//       UIView* container=self.view.window.subviews[0];
+//      NSArray* c=container.subviews;
+//    [container insertSubview:menuViewController.view atIndex:1];
+//c=container.subviews;
 	[self.view.window insertSubview:menuViewController.view atIndex:0];
-
+//    [self.view.window addSubview:menuViewController.view];
+//    UIView* uiview=self.view.window.subviews[0];
+//    [uiview bringSubviewToFront:self.view];
+    
 	[self updateMenuFrameAndTransformAccordingToOrientation];
 	
 	[self.menuRevealAnimator prepareMenuForAnimation:menu];
+    
+
 }
 
 - (CGFloat)horizontalLocation

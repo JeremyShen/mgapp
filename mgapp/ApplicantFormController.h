@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ApplicantFormController : UIViewController<UITextViewDelegate>
+@interface ApplicantFormController : UIViewController<UITextViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITextView *content;
 @property (weak, nonatomic) IBOutlet UITextField *date;
 @property (weak, nonatomic) IBOutlet UITextView *text2;
@@ -17,4 +17,6 @@
 - (IBAction)exit2:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextView *content2;
+
+@property (strong, nonatomic)  NSArray *data;
 @end

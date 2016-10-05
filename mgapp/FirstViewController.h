@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SlideNavigationController.h"
-@interface FirstViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,SlideNavigationControllerDelegate>
+@interface FirstViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (weak, nonatomic) IBOutlet UINavigationBar *nvbar;

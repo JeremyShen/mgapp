@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SlideNavigationController.h"
-
-@interface LeftMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import "FSMediaPicker.h"
+@interface LeftMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,FSMediaPickerDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView1;
 @property (nonatomic, assign) BOOL slideOutAnimationEnabled;
 //@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *head;
-
 @end
